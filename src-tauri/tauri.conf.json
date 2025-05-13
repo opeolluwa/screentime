@@ -15,7 +15,7 @@
         "title": "Screentime",
         "width": 500,
         "resizable": false,
-        "height": 500
+        "height": 400
       }
     ],
     "security": {

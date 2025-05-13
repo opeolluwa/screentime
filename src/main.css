@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+
+@theme {
+    --color-sc-orange: #F79B72;
+    --color-sc-dark: #2A4759;
+    --color-sc-grey: #DDDDDD;
+    --color-sc-faint: #EEEEEE;
+}
