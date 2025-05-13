@@ -13,7 +13,7 @@
       labelColor="var(--sc-faint)"
     />
 
-    <div class="size-12 absolute right-6 top-6 bg-sc-orange rounded-full p-2 cursor-pointer shadow">
+    <div class="size-12 absolute right-6 bottom-6 bg-sc-orange rounded-full p-2 cursor-pointer shadow">
       <Cog6ToothIcon class="size-8 text-sc-faint" />
     </div>
   </div>
