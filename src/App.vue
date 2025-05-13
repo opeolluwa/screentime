@@ -28,6 +28,7 @@ import {
 import { onMounted, ref } from "vue";
 import { Countdown } from "vue3-flip-countdown";
 import { Cog6ToothIcon } from "@heroicons/vue/20/solid";
+
 const percentage = ref(5);
 
 const date = ref(new Date().getTime() + 25 * 60 * 1000);
