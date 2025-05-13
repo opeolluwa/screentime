@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 
 @theme {
     --color-sc-orange: #F79B72;
