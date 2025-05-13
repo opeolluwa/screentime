@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "screentime",
+        "title": "Screentime",
         "width": 500,
         "resizable": false,
         "height": 500

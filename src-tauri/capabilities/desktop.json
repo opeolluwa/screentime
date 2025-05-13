@@ -1,0 +1,16 @@
+{
+  "identifier": "desktop-capability",
+  "platforms": ["macOS", "windows", "linux"],
+  "windows": ["main"],
+  "permissions": [
+    "autostart:default",
+    "autostart:allow-enable",
+    "autostart:allow-disable",
+    "autostart:allow-is-enabled",
+    "notification:allow-is-permission-granted",
+    "notification:allow-request-permission",
+    "notification:allow-notify",
+    "notification:allow-show",
+    "notification:allow-permission-state"
+  ]
+}
