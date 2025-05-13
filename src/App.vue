@@ -1,7 +1,7 @@
 <template>
   <div
     id="container"
-    class="w-full h-screen bg-sc-orange/80 bg-linear-to-r from-sc-orange to-sc-orange/80 bg-[url(bg-4.jpg)] bg-center-center bg-blend-multiply bg-cover bg-no-repeat relative flex flex-col items-center justify-center px-8"
+    class="w-full h-screen bg-sc-orange/80 bg-linear-to-r from-sc-orange to-sc-orange/80 bg-[url(assets/bg-4.jpg)] bg-center-center bg-blend-multiply bg-cover bg-no-repeat relative flex flex-col items-center justify-center px-8"
   >
     <h2 class="font-medium text-3xl mb-4 hidden">active</h2>
     <Countdown
