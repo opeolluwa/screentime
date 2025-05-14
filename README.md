@@ -3,6 +3,7 @@
 An intuitive desktop application to manage your screentime
 
 ![./screen-time.png](./screen-time.png)
+
 ## Getting Started
 
 ### Dependencies

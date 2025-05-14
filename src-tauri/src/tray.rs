@@ -19,7 +19,7 @@ pub fn init_macos_menu_extra<R: Runtime>(app: &tauri::AppHandle<R>) -> tauri::Re
             "quit" => {
                 app.exit(0);
             }
-            // @TODO: Add and handle more menu entries, like play, pause, open, ...
+           // TODO: add mute, and settings options 
             _ => {}
         })
         .on_tray_icon_event(|tray, event| {
