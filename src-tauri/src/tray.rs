@@ -35,7 +35,7 @@ pub fn init_macos_menu_extra<R: Runtime>(app: &tauri::AppHandle<R>) -> tauri::Re
             {
                 if let Some(window) = app.get_webview_window("main") {
                     if !window.is_visible().unwrap_or(false) {
-                        let _ = window.move_window(tauri_plugin_positioner::Position::TrayRight);
+                        let _ = window.move_window(tauri_plugin_positioner::Position::Center);
                         let _ = window.show();
                         let _ = window.set_focus();
                     } else {
