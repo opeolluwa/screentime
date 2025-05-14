@@ -1,5 +1,5 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-use tauri::{ActivationPolicy, Manager};
+use tauri::Manager;
 mod tray;
 
 #[tauri::command]
@@ -41,7 +41,7 @@ pub fn run() {
             {
                 tray::init_macos_menu_extra(app.handle())?;
                 // Make the Dock icon invisible
-                app.set_activation_policy(ActivationPolicy::Accessory);
+                app.set_activation_policy(tauri::ActivationPolicy::Accessory);
             }
 
             Ok(())
