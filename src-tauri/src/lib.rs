@@ -1,5 +1,6 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-use tauri::Manager;
+use tauri::{ActivationPolicy, Manager};
+mod tray;
 
 #[tauri::command]
 fn greet(name: &str) -> String {
@@ -9,6 +10,7 @@ fn greet(name: &str) -> String {
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
+        .plugin(tauri_plugin_positioner::init())
         .plugin(tauri_plugin_sql::Builder::new().build())
         .plugin(tauri_plugin_single_instance::init(|app, _args, _cwd| {
             let _ = app
@@ -34,6 +36,14 @@ pub fn run() {
                     let _ = autostart_manager.enable();
                 }
             }
+
+            #[cfg(target_os = "macos")]
+            {
+                tray::init_macos_menu_extra(app.handle())?;
+                // Make the Dock icon invisible
+                app.set_activation_policy(ActivationPolicy::Accessory);
+            }
+
             Ok(())
         })
         .plugin(tauri_plugin_opener::init())

@@ -13,7 +13,6 @@
     />
     <div
       class="size-12 absolute right-6 bottom-6 bg-sc-dark rounded-full p-2 cursor-pointer shadow"
-
     >
       <Cog6ToothIcon class="size-8 text-sc-orange" />
     </div>
@@ -30,12 +29,12 @@ import sessionOverSrc from "./assets/session-over.mp3";
 import breakOverSrc from "./assets/break-over.mp3";
 import alarmSoundSrc from "./assets/alarm.mp3";
 
-const SESSION_DURATION = 6 * 1000;
-const BREAK_DURATION = 6 * 1000;
+const SESSION_DURATION = 25 * 60 * 1000;
+const BREAK_DURATION = 5 * 60 * 1000;
 
 const deadline = ref(new Date(Date.now() + SESSION_DURATION));
-const isSession = ref(false);
-const isBreak = ref(true);
+const isSession = ref(true);
+const isBreak = ref(false);
 
 const { play: notifySessionOver } = useSound(sessionOverSrc);
 const { play: notifyBreakOver } = useSound(breakOverSrc);
