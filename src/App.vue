@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, watch } from "vue";
+import { ref,} from "vue";
 import { Cog6ToothIcon } from "@heroicons/vue/20/solid";
 import { Countdown as FlipCountdown } from "vue3-flip-countdown";
 import { useSound } from "@vueuse/sound";
