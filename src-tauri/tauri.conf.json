@@ -13,9 +13,9 @@
     "windows": [
       {
         "title": "Screentime",
-        "width": 500,
+        "width": 300,
         "resizable": false,
-        "height": 500
+        "height": 300
       }
     ],
     "security": {
